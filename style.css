@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.wrapper {
+    margin: 1em;
+}
+
+.first-day {
+    grid-column-start: var(--start);
+}
+
+.day-name {
+    background: #eee;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+ol {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    padding: 7px;
+    text-align: center;
+    border: 1px solid #eee;
+    user-select: none;
+}
