@@ -4,7 +4,8 @@ function calendar(
 ) {
 
     const weekdays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const months = new Array(12).fill().map((_, i) => new Date(2022, i, 1).toLocaleString('default', { month: 'long' }));
+        
 
     document.body.style.fontFamily = fontFamily;
 
